@@ -1,6 +1,6 @@
 {
   "name": "supp-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official TypeScript SDK for the Supp API — AI-powered customer support classification and routing",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

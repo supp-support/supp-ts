@@ -18,27 +18,42 @@ import { Supp } from "supp-ts";
 
 const supp = new Supp("sk_live_...");
 
-// Classify a customer message
+// Classify a customer message — $0.20
 const result = await supp.classify("I need a refund for my last order");
 console.log(result.intent);     // "refund_initiation"
 console.log(result.confidence); // 0.94
+
+// Classify + priority in one call — $0.23
+const full = await supp.classifyWithPriority("Our entire team is locked out");
+console.log(full.intent);   // "account_lockout"
+console.log(full.priority); // "critical"
 ```
 
 ## Usage
 
 ### Classification
 
-Classify messages into 315 intents across 13 categories.
+Classify messages into 315 intents across 13 categories. Three methods at different price points:
+
+| Method | Returns | Cost |
+|--------|---------|------|
+| `classify()` | intent, confidence, suggested action | $0.20 |
+| `classifyWithPriority()` | everything above + priority level | $0.23 |
+| `priorityScore()` | priority level only | $0.03 |
 
 ```ts
-// Basic classification ($0.20)
+// Basic — intent + confidence ($0.20)
 const result = await supp.classify("The app crashes when I open settings");
+console.log(result.intent);      // "bug_report"
+console.log(result.confidence);  // 0.91
+console.log(result.actionType);  // "mcp_action"
 
-// With priority scoring ($0.23)
-const result = await supp.classifyWithPriority("Our entire team is locked out");
-console.log(result.priority); // "critical"
+// Full — intent + confidence + priority ($0.23)
+const full = await supp.classifyWithPriority("Our entire team is locked out");
+console.log(full.intent);   // "account_lockout"
+console.log(full.priority); // "critical"
 
-// Priority score only ($0.03)
+// Priority only — just urgency scoring ($0.03)
 const priority = await supp.priorityScore("When do you open?");
 console.log(priority.priority); // "low"
 ```
