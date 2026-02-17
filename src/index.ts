@@ -43,7 +43,7 @@ export class Supp {
    *
    * @example
    * ```ts
-   * import { Supp } from "supp-js";
+   * import { Supp } from "supp-ts";
    *
    * const supp = new Supp("sk_live_abc123");
    * ```

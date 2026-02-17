@@ -1,7 +1,7 @@
 {
-  "name": "supp-js",
+  "name": "supp-ts",
   "version": "1.0.0",
-  "description": "Official JavaScript SDK for the Supp API — AI-powered customer support classification and routing",
+  "description": "Official TypeScript SDK for the Supp API — AI-powered customer support classification and routing",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -39,10 +39,10 @@
     "api"
   ],
   "author": "Supp <hello@supp.support>",
-  "license": "MIT",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/creayo/supp-js"
+    "url": "https://github.com/supp-support/supp-ts"
   },
   "homepage": "https://supp.support",
   "engines": {

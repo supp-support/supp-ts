@@ -1,20 +1,20 @@
-# supp-js
+# supp-ts
 
-Official JavaScript/TypeScript SDK for the [Supp](https://supp.support) API — AI-powered customer support classification and routing.
+Official TypeScript SDK for the [Supp](https://supp.support) API — AI-powered customer support classification and routing.
 
-[![npm version](https://img.shields.io/npm/v/supp-js.svg)](https://www.npmjs.com/package/supp-js)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/supp-ts.svg)](https://www.npmjs.com/package/supp-ts)
+[![License: PolyForm Noncommercial](https://img.shields.io/badge/License-PolyForm%20Noncommercial-blue.svg)](LICENSE)
 
 ## Install
 
 ```bash
-npm install supp-js
+npm install supp-ts
 ```
 
 ## Quick Start
 
 ```ts
-import { Supp } from "supp-js";
+import { Supp } from "supp-ts";
 
 const supp = new Supp("sk_live_...");
 
@@ -196,7 +196,7 @@ import {
   InsufficientBalanceError,
   RateLimitError,
   ValidationError,
-} from "supp-js";
+} from "supp-ts";
 
 try {
   await supp.classify("...");
@@ -219,7 +219,7 @@ try {
 ## CommonJS
 
 ```js
-const { Supp } = require("supp-js");
+const { Supp } = require("supp-ts");
 
 const supp = new Supp("sk_live_...");
 const result = await supp.classify("I need help");
@@ -246,8 +246,8 @@ New accounts get **$5.00 in free credits**.
 
 - [Documentation](https://supp.support/docs)
 - [Dashboard](https://supp.support/dashboard)
-- [MCP Server Docs](https://github.com/creayo/supp-mcp-docs)
+- [MCP Server Docs](https://github.com/supp-support/mcp-docs)
 
 ## License
 
-MIT
+PolyForm Noncommercial 1.0.0 — free for non-commercial use.
