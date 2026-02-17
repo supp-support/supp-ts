@@ -36,8 +36,10 @@
     "automation",
     "nlp",
     "sdk",
-    "api"
+    "api",
+    "typescript"
   ],
+  "sideEffects": false,
   "author": "Supp <hello@supp.support>",
   "license": "SEE LICENSE IN LICENSE",
   "repository": {
@@ -45,6 +47,9 @@
     "url": "https://github.com/supp-support/supp-ts"
   },
   "homepage": "https://supp.support",
+  "bugs": {
+    "url": "https://github.com/supp-support/supp-ts/issues"
+  },
   "engines": {
     "node": ">=18"
   },
