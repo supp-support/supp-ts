@@ -1,0 +1,55 @@
+{
+  "name": "supp-js",
+  "version": "1.0.0",
+  "description": "Official JavaScript SDK for the Supp API — AI-powered customer support classification and routing",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "supp",
+    "customer-support",
+    "ai",
+    "classification",
+    "intent",
+    "routing",
+    "automation",
+    "nlp",
+    "sdk",
+    "api"
+  ],
+  "author": "Supp <hello@supp.support>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/creayo/supp-js"
+  },
+  "homepage": "https://supp.support",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  }
+}
