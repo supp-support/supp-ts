@@ -3,7 +3,7 @@
 Official TypeScript SDK for the [Supp](https://supp.support) API — AI-powered customer support classification and routing.
 
 [![npm version](https://img.shields.io/npm/v/supp-ts.svg)](https://www.npmjs.com/package/supp-ts)
-[![License: PolyForm Noncommercial](https://img.shields.io/badge/License-PolyForm%20Noncommercial-blue.svg)](LICENSE)
+[![License: Supp SDK](https://img.shields.io/badge/License-Supp%20SDK-blue.svg)](LICENSE)
 
 ## Install
 
@@ -250,4 +250,4 @@ New accounts get **$5.00 in free credits**.
 
 ## License
 
-PolyForm Noncommercial 1.0.0 — free for non-commercial use.
+Supp SDK License — free to use with the Supp platform. See [LICENSE](LICENSE).
